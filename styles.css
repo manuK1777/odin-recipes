@@ -1,10 +1,39 @@
+html {
+    box-sizing: border-box;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/** {
+  margin: 0;
+  padding: 0;
+  /*to override the default browser setup*/
+/*}*/
+
+
 body {
     font-family: Verdana, Arial, sans-serif;
+    background-color: rgb(9, 187, 187);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style:groove;
+    border-width: 20px;
+    border-color: blueviolet;
 }
 
 h1 {
+    font-style: oblique;
+    font-size: 32px;
     text-align: center;
     background-color: aquamarine;
+    opacity: 0.7;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1%;   
 }
 
 .main-head {
@@ -13,11 +42,19 @@ h1 {
 
 .recipes-head {
     margin-bottom: 5%;
+    border-style:dotted;
+    border-color:chocolate;
+    border-width: 8px;
 }
 
 h2, 
 h3 {
+    font-style: italic;
     margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 2%;
+    opacity: 0.9;
 }
 
 h2 {
@@ -26,10 +63,17 @@ h2 {
 
 h3 {
     background-color: rgb(82, 241, 135);
+    margin-bottom: 4%;
 }
 
-body {
-    background-color: rgb(9, 187, 187);
+.content { /*span around p*/
+    margin-bottom: 7%;
+    display: block;
+}
+
+p {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .recipes-img { /*image centered*/
@@ -37,11 +81,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    border-style: ridge;
+    border-width: 18px;
 }
 
-.li-main {
+.li-main  {
     font-size: 18px;
     line-height: 140%;
+}
+
+.li-main .link-main {
+    color: rgb(12, 70, 121);
 }
 
 .recipes { /*recipes lists (span)*/
